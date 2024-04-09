@@ -1,0 +1,189 @@
+.body1 {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+img{
+    z-index: 1;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    z-index: 9;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+p {
+    margin: 0;
+    color: white;
+}
+
+header.scrolled {
+    background-color: white;
+}
+
+header.scrolled nav a {
+    color: black;
+}
+
+.gridclass {
+    margin: 80px;
+    display: flex;
+    gap: 80px;
+}
+
+.gridclass .br1 {
+    margin-top: 0;
+    border-radius: 50px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    margin: 80px;
+   
+    gap: 80px;
+    padding: 0;
+}
+
+.products .br1 {
+    border-radius: 50px;
+    padding: 0;
+   
+}
+
+.rolexa1p {
+    color: black;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100px;
+    margin-top: 15px;
+    z-index: 50;
+    
+}
+
+.rolexa1p:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    color: red;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 90;
+   
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+    color: skyblue;
+}
+
+header.scrolled nav a:hover {
+    color: red;
+}
+
+.main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+   
+}
+
+.br1:hover {
+    cursor: pointer;
+}
+
+.arrivals
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin-top:200px;
+
+}
+.collections
+{
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 300px 300px auto;
+    gap:80px;
+    margin: 80px;
+   
+   
+   
+}
+.item-name
+{
+    height: 50px;
+   
+background-color: white;
+color: black;
+border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   transform: translateY(-170%);
+   
+}
+.collections img{
+    border-radius: 50px;
+    z-index: -1;
+}
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 2;
+    
+    
+    
+    
+}
+
+
+.another {
+    margin-left: 20px;
+    font-size: xx-large;
+    transform: translateY(-130px);
+  
+    transition: transform 0.2s ease-in-out;
+    display: none;
+    cursor: pointer;
+    
+}
+
+.item:hover .another{
+    transition: transform 0.1s ease-in-out;
+
+    display: block;
+    cursor: pointer;
+}
