@@ -1,79 +1,112 @@
+
 .body1 {
-    background-color: black;
+    background-color: purple;
     margin: 0;
     padding: 0;
 }
-img{
-    z-index: 1;
+.scroll-watcher
+{
+    height:10px;
+    position:fixed;
+    top:0;
+    z-index: 1000;
+    background-color: lime;
+    width: 100%;
+    scale: 0 1;;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+    
+}
+@keyframes scroll-watcher{
+to  { scale:1 1;}
+
+
 }
 
+
+
+
+img {
+    z-index: 1;
+}
 header {
-    margin: 0;
-    padding: 0;
+    
+   margin-top: 10px;
+ 
     position: sticky;
-    top: 0;
+    top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: black;
+    background-color:red;
     cursor: pointer;
     z-index: 9;
+    border-radius: 20px;
 }
-
 header nav a {
+    font-size:large;
     color: white;
     text-decoration: none;
+    
 }
-
 header nav {
     position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    
+}
+#ho
+{
+    transform: translateY(-10px);
 }
 
 p {
     margin: 0;
     color: white;
 }
-
 header.scrolled {
-    background-color: white;
+    
+   margin-top: 20px;
+   position: sticky;
+    background-color: orange;
+   
 }
-
 header.scrolled nav a {
     color: black;
 }
-
 .gridclass {
     margin: 80px;
     display: flex;
     gap: 80px;
+    
 }
+.gridclass div:hover .another
+{
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    cursor: pointer;
+}
+
 
 .gridclass .br1 {
     margin-top: 0;
     border-radius: 50px;
 }
-
 .products {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px;
     margin: 80px;
-   
     gap: 80px;
     padding: 0;
 }
-
 .products .br1 {
     border-radius: 50px;
     padding: 0;
-   
 }
-
 .rolexa1p {
     color: black;
     display: flex;
@@ -86,9 +119,7 @@ header.scrolled nav a {
     border-radius: 100px;
     margin-top: 15px;
     z-index: 50;
-    
 }
-
 .rolexa1p:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
@@ -96,94 +127,94 @@ header.scrolled nav a {
     font-weight: bolder;
     cursor: pointer;
     z-index: 90;
-   
 }
-
 a:hover {
     transform: scale(1.1);
     transition: transform 0.1s ease-in-out;
-    color: skyblue;
+    color: yellow;
 }
-
 header.scrolled nav a:hover {
     color: red;
 }
-
 .main2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: xx-large;
     color: white;
-   
 }
-
 .br1:hover {
     cursor: pointer;
 }
-
-.arrivals
-{
+.arrivals {
     display: flex;
     justify-content: center;
     color: white;
-    align-items: center;
-    margin-top:200px;
-
+    align-items: center;    
+    margin-top: 200px;
+    font-size:xx-large;
 }
-.collections
-{
+.collections {
     display: grid;
     grid-template-rows: 300px 300px;
     grid-template-columns: 300px 300px auto;
-    gap:80px;
+    gap: 80px;
     margin: 80px;
-   
-   
-   
 }
-.item-name
-{
+.item-name {
     height: 50px;
-   
-background-color: white;
-color: black;
-border-radius: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-   transform: translateY(-170%);
-   
+    transform: translateY(-170%);
 }
-.collections img{
+.collections img {
     border-radius: 50px;
     z-index: -1;
 }
-img:hover{
+img:hover {
     transform: scale(1.1);
     cursor: pointer;
     z-index: 2;
-    
-    
-    
-    
+    transition: transform 0.3s ease-in-out;
 }
-
-
 .another {
     margin-left: 20px;
     font-size: xx-large;
     transform: translateY(-130px);
-  
     transition: transform 0.2s ease-in-out;
     display: none;
     cursor: pointer;
-    
 }
-
-.item:hover .another{
-    transition: transform 0.1s ease-in-out;
-
+.item:hover .another {
+    transition: transform 0.3s ease-in-out;
     display: block;
     cursor: pointer;
+}
+
+
+
+
+
+.hidden{
+   
+    opacity: 100;
+    transition: 0.4s;
+    transform: translateX(-100%);
+
+}
+
+.show
+{
+    opacity: 1;
+    filter:blur(0);
+    transform: translate(0);
+
+}
+.gridclass:nth-child(3)
+{
+    transition-delay: 9900ms;
 }
