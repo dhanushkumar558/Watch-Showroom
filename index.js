@@ -1,4 +1,4 @@
-
+//header navigation
         document.addEventListener('scroll',()=>
     {
         const header =document.querySelector('header');
@@ -11,15 +11,16 @@
             header.classList.remove('scrolled');
         }
  });
+ //header navigation
    
 
 
 
-
+//----------- 
+// scroll show
 
  const observer = new IntersectionObserver((entries) =>
 {
-
     entries.forEach((entry) =>
     {
         console.log(entry)
@@ -30,25 +31,13 @@
         else{
             entry.target.classList.remove('show');
         }
-
-    });
-
-
-
-
-    
-
-
-
-
-    
+    });   
 });
-
-
-
-
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el)=> observer.observe(el));
 
 
-  
+
+
+
+

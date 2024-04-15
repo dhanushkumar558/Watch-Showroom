@@ -1,31 +1,9 @@
 
 .body1 {
-    background-color: purple;
+   background-color: black;
     margin: 0;
     padding: 0;
 }
-.scroll-watcher
-{
-    height:10px;
-    position:fixed;
-    top:0;
-    z-index: 1000;
-    background-color: lime;
-    width: 100%;
-    scale: 0 1;;
-    animation: scroll-watcher linear;
-    animation-timeline: scroll();
-    
-}
-@keyframes scroll-watcher{
-to  { scale:1 1;}
-
-
-}
-
-
-
-
 img {
     z-index: 1;
 }
@@ -61,6 +39,14 @@ header nav {
 #ho
 {
     transform: translateY(-10px);
+}
+#main678
+{
+    transform: translateY(-60px);
+}
+#main679
+{
+    transform: translateY(60px);
 }
 
 p {
@@ -120,6 +106,7 @@ header.scrolled nav a {
     margin-top: 15px;
     z-index: 50;
 }
+
 .rolexa1p:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
@@ -142,6 +129,7 @@ header.scrolled nav a:hover {
     align-items: center;
     font-size: xx-large;
     color: white;
+    transform: translateY(10px);
 }
 .br1:hover {
     cursor: pointer;
@@ -201,7 +189,8 @@ img:hover {
 
 .hidden{
    
-    opacity: 100;
+    opacity: 0;
+    filter: blur(50px);
     transition: 0.4s;
     transform: translateX(-100%);
 
@@ -214,7 +203,259 @@ img:hover {
     transform: translate(0);
 
 }
-.gridclass:nth-child(3)
+.p4 p
 {
-    transition-delay: 9900ms;
+   transform: translateY(-500px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: xx-large;
+   color: red;
+ 
+   font-size:1300%;
+
+   
+   
 }
+
+.luxury p {
+    margin-top: -500px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: yellow;
+    
+    font-size: 400%;
+    
+    
+   
+}
+
+.p4 p   
+{
+    text-shadow: 
+   
+    -10px -10px 0 yellow,
+    10px -10px 0 yellow,
+    -10px 10px 0 yellow,
+    10px 10px 0 yellow;
+}
+.luxury p{
+    text-shadow: 
+       
+        -5px -5px 0 red,
+        5px -5px 0 red,
+        -5px 5px 0 red,
+        5px 5px 0 red;
+}
+
+
+
+.mainimg img:hover{
+   transition: none;
+   transform: none;
+   
+}
+.img14
+{
+    filter: blur(5px);
+}
+
+
+#aboutus  
+{
+   
+    height: 500px;
+    width:100%;
+    background-color: black;
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+    align-items: center;
+    margin: 100px;
+    transform: translateX(-100px);
+ 
+    
+}
+.aboutcontainer
+{
+    height: 300px;
+    width: 700px;
+    margin: 100px;
+    background-color: transparent;
+    border-radius: 100px;
+    border-radius: 100px;
+    background-color:transparent;
+   
+   
+}
+.aboutcontainer h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+   background-color: yellow ;
+   border-radius: 100px;  
+   width: 600px;   
+   margin-left: 50px;  
+    
+    
+   
+
+  
+    
+}
+.aboutcontainer p{
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+    
+
+    color: yellow;
+    font-size: x-large;
+    background-color: red;
+    width: 600px;
+    height: 200px;
+    margin-left: 20px;  
+    border-radius: 100px;
+    padding: 30px;
+    
+   
+}
+
+
+.contact {
+    position: relative;
+    width: 100%;
+    margin: 45px 0;
+    background: #EF233C;
+}
+
+.contact .container-fluid {
+    background: url(../img/contact.jpg) left center no-repeat;
+    background-size: contain;
+}
+
+.contact .contact-form {
+    position: relative;
+    padding: 90px 0 90px 45px;
+    background: #EF233C;
+}
+
+.contact .contact-form input {
+    color: #ffffff;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(256, 256, 256, .5);
+}
+
+.contact .contact-form textarea {
+    color: #ffffff;
+    height: 90px;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(256, 256, 256, .5);
+}
+
+.contact .contact-form .form-control::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.contact .contact-form .form-control:-ms-input-placeholder,
+.contact .contact-form .form-control::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.contact .contact-form .btn {
+    margin-top: 35px;
+    color: #EF233C;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.contact .contact-form .btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+.contact .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .contact .container-fluid {
+        background: none;
+    }
+    
+    .contact .contact-form {
+        padding: 90px 0;
+    }
+}
+.contact{
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    
+}
+.form-control
+{
+
+width: 700px;
+}
+.btn{
+    border-radius: 10px;
+    
+    height: 30px;
+    border: none;
+}
+.btn:hover
+{
+    background-color: white;
+}
+.book
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:xx-large;
+   
+}
+#about-us
+{
+    transform: translateY(-60px);
+}
+#book
+{
+
+    transform: translateY(-60px);
+}
+   
+
+
+
+  
+
+
+
+
+
+
+
